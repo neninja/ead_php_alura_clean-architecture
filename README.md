@@ -2,6 +2,10 @@
 
 > Projeto referente a [este](https://cursos.alura.com.br/course/php-introducao-clean-achitecture) curso.
 
+## Requisitos
+
+- PHP 7.4
+
 ## Setup inicial
 
 ```sh
