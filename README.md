@@ -21,4 +21,5 @@ composer test
 ## Resumos sobre o curso
 
 - **Arquitetura**: forma da organização do código que facilita/dificulta manutenção e extensão do código.
-> [phprio](https://dev.to/phprio/o-que-e-arquitetura-17ob)
+    > [phprio](https://dev.to/phprio/o-que-e-arquitetura-17ob)
+- A aplicação é desenvolvida a partir de seu domínio mais básico e importante. Essas classes que compõe o domínio são as entidades.
