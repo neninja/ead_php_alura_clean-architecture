@@ -22,4 +22,5 @@ composer test
 
 - **Arquitetura**: forma da organização do código que facilita/dificulta manutenção e extensão do código.
     > [phprio](https://dev.to/phprio/o-que-e-arquitetura-17ob)
-- A aplicação é desenvolvida a partir de seu domínio mais básico e importante. Essas classes que compõe o domínio são as entidades.
+- A aplicação é desenvolvida a partir de seu domínio mais básico e importante. ~~Essas classes que compõe o domínio são as entidades.~~ (não é possível ter uma aplicação composta somente por ValueObjects?)
+- **Entidades** devem possuir um identificador que a distingua de outra classe com as mesmas propriedades (dois alunos chamados Felipe não são o mesmo aluno). Enquanto que classes que não precisem de distinção (dois e-mails de mesmo endereço são iguais em qualquer contexto) são chamadas de **ValueObjects**
