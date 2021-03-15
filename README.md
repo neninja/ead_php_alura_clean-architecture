@@ -13,3 +13,7 @@ composer i
 ```sh
 composer test
 ```
+
+## Resumos sobre o curso
+
+- **Arquitetura**: forma da organização do código que facilita/dificulta manutenção e extensão do código.
