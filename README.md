@@ -27,3 +27,38 @@ composer test
     > [Martin Fowler](https://martinfowler.com/bliki/ValueObject.html)
 - **Named constructors**: métodos estáticos que sabem como criar a própria classe, podem ajudar na legibilidade do código com construtores mais complexos. Dependendo da complexidade faz mais sentido usar um [Builder](https://refactoring.guru/pt-br/design-patterns/builder/php/example)
 - A separação em módulos/pastas (namespaces do php) ajuda a identificar melhor a arquitetura. É normal um módulo precisar de outro ou de um compartilhado para existir.
+
+### Padrões de arquitetura
+
+#### Hexagonal
+
+```txt
+                                    /                 /
+  +----------------+          +----/---+         +---/-+
+  |WebApp/MobileApp+--------->|Adapters+-------->|Ports|      +--------+ 
+  +----------------+          +--/-----+         +-/---+      |Business| 
+                                /    infra        /  domain   | Domain | 
+  +--------+             +-----/--+          +---/-+          +--------+
+  |Database+------------>|Adapters+--------->|Ports|  
+  +--------+             +-----\--+          +---\-+          +--------+
+                                \    infra        \  domain   |Services|
+  +------------------+        +--\-----+         +-\---+      +--------+
+  |UnitTesting/CLIApp+------->|Adapters+-------->|Ports|
+  +------------------+        +----\---+         +---\-+
+                                    \                 \
+```
+
+#### Clean
+
+```txt
+                  |                     |                     |     
+                  |                     |                     |     
+   Frameworks     |      Interface      |     Application     |     Enterprises
+   & Drivers      |      Adapters       |      Business       |      Business
+              -------->             -------->   Rules     -------->   Rules
+     Web          |      Gateways       |                     |     
+     UI           |     Presenters      |      Use Cases      |      Entities
+     DB           |     Controllers     |                     |     
+                  |                     |                     |     
+                  |                     |                     |     
+```
