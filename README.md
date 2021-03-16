@@ -31,6 +31,7 @@ composer test
     - *Interfaces* na camada de domínio e aplicação são implementações de bibliotecas. No primeiro caso participam ativamente das **Entidades** e no segundo dos **UseCases**.
     > É possível concluir que **interfaces** da camada de domínio são obrigações da empresa, onde que mesmo se não houvesse aplicação elas existiriam e da camada de aplicação o contrário. ~~Ponto que não ficou muito claro, pois não vejo sentido na empresa entender o que é persistência no banco (repository)~~
 - **UseCases** são utilizados para centralizar algoritmos sem se comprometer com framework. Fora das controllers as regras de negócio ficam agnósticas de bibliotecas e testáveis.
+- **DTOs** deve possuir tipos primitivos de propriedades
 - Não necessariamente uma arquitetura bem robusta faça sentido em qualquer projeto, pois não compensa gastar um tiro de canhão em uma mosca e assinar todas burocracias de uma arquitetura mais complexa.
 
  <img width="300" alt="sword meme" src="sword.png">
