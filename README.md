@@ -29,6 +29,12 @@ composer test
 - A separação em módulos/pastas (namespaces do php) ajuda a identificar melhor a arquitetura. É normal um módulo precisar de outro ou de um compartilhado para existir.
 - Domínio x Aplicação: O primeiro são referentes a regras de entidades e o segundo sobre o que a aplicação se propõe a fazer. Ambas são regras de negócio em camadas distintas.
     - *Interfaces* na camada de domínio e aplicação são implementações de bibliotecas. No primeiro caso participam ativamente das **Entidades** e no segundo dos **UseCases**.
+    > É possível concluir que **interfaces** da camada de domínio são obrigações da empresa, onde que mesmo se não houvesse aplicação elas existiriam e da camada de aplicação o contrário. ~~Ponto que não ficou muito claro, pois não vejo sentido na empresa entender o que é persistência no banco (repository)~~
+- **UseCases** são utilizados para centralizar algoritmos sem se comprometer com framework. Fora das controllers as regras de negócio ficam agnósticas de bibliotecas e testáveis.
+- Não necessariamente uma arquitetura bem robusta faça sentido em qualquer projeto, pois não compensa gastar um tiro de canhão em uma mosca e assinar todas burocracias de uma arquitetura mais complexa.
+<details>
+![sword meme](./sword.png)
+<details>
 
 ### Padrões de arquitetura
 
