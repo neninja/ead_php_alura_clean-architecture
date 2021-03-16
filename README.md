@@ -26,3 +26,4 @@ composer test
 - **Entidades** devem possuir um identificador que a distingua de outra classe com as mesmas propriedades (dois alunos chamados Felipe não são o mesmo aluno), pois possue uma identidade **única**. Enquanto que classes que não precisem de distinção (dois e-mails de mesmo endereço são iguais em qualquer contexto) são chamadas de **ValueObjects**
     > [Martin Fowler](https://martinfowler.com/bliki/ValueObject.html)
 - **Named constructors**: métodos estáticos que sabem como criar a própria classe, podem ajudar na legibilidade do código com construtores mais complexos. Dependendo da complexidade faz mais sentido usar um [Builder](https://refactoring.guru/pt-br/design-patterns/builder/php/example)
+- A separação em módulos/pastas (namespaces do php) ajuda a identificar melhor a arquitetura. É normal um módulo precisar de outro ou de um compartilhado para existir.
