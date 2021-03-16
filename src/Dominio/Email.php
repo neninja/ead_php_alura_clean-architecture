@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\Arquitetura;
+namespace Alura\Arquitetura\Dominio;
 
 class Email
 {
@@ -8,9 +8,9 @@ class Email
 
     public function __construct(string $endereco)
     {
-        if(filter_var($endereco, FILTER_VALIDATE_EMAIL) === false){
+        if (filter_var($endereco, FILTER_VALIDATE_EMAIL) === false) {
             throw new \InvalidArgumentException(
-                "Endereço de e-mail inválido"
+                'Endereço de e-mail inválido'
             );
         }
 
