@@ -32,9 +32,8 @@ composer test
     > É possível concluir que **interfaces** da camada de domínio são obrigações da empresa, onde que mesmo se não houvesse aplicação elas existiriam e da camada de aplicação o contrário. ~~Ponto que não ficou muito claro, pois não vejo sentido na empresa entender o que é persistência no banco (repository)~~
 - **UseCases** são utilizados para centralizar algoritmos sem se comprometer com framework. Fora das controllers as regras de negócio ficam agnósticas de bibliotecas e testáveis.
 - Não necessariamente uma arquitetura bem robusta faça sentido em qualquer projeto, pois não compensa gastar um tiro de canhão em uma mosca e assinar todas burocracias de uma arquitetura mais complexa.
-<details>
-![sword meme](./sword.png)
-<details>
+
+ <img width="300" alt="sword meme" src="sword.png">
 
 ### Padrões de arquitetura
 
