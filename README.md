@@ -27,6 +27,8 @@ composer test
     > [Martin Fowler](https://martinfowler.com/bliki/ValueObject.html)
 - **Named constructors**: métodos estáticos que sabem como criar a própria classe, podem ajudar na legibilidade do código com construtores mais complexos. Dependendo da complexidade faz mais sentido usar um [Builder](https://refactoring.guru/pt-br/design-patterns/builder/php/example)
 - A separação em módulos/pastas (namespaces do php) ajuda a identificar melhor a arquitetura. É normal um módulo precisar de outro ou de um compartilhado para existir.
+- Domínio x Aplicação: O primeiro são referentes a regras de entidades e o segundo sobre o que a aplicação se propõe a fazer. Ambas são regras de negócio em camadas distintas.
+    - *Interfaces* na camada de domínio e aplicação são implementações de bibliotecas. No primeiro caso participam ativamente das **Entidades** e no segundo dos **UseCases**.
 
 ### Padrões de arquitetura
 
